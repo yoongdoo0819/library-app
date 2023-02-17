@@ -3,7 +3,7 @@ package com.group.libraryapp.controller.user;
 import com.group.libraryapp.dto.user.request.UserCreateRequest;
 import com.group.libraryapp.dto.user.request.UserUpdateRequest;
 import com.group.libraryapp.dto.user.response.UserResponse;
-import com.group.libraryapp.service.user.UserService;
+import com.group.libraryapp.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,7 +24,7 @@ public class UserController {
 
   @GetMapping("/user")
   public List<UserResponse> getUsers() {
-    return userService.getUsers();
+    return userService.getUsrs();
   }
 
   @PutMapping("/user")
